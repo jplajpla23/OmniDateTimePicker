@@ -80,6 +80,7 @@ class _OmniDtpRangeState extends State<OmniDtpRange>
                 maxHeight: 550,
               ),
               child: TabBarView(
+                physics: const NeverScrollableScrollPhysics(),
                 controller: _tabController,
                 children: [
                   PickerView(
